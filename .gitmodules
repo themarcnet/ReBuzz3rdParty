@@ -1,3 +1,9 @@
 [submodule "matilde"]
 	path = matilde
 	url = https://github.com/themarcnet/matilde
+[submodule "serilog/serilog"]
+	path = serilog/serilog
+	url = https://github.com/serilog/serilog
+[submodule "serilog/serilog-sinks-richtextbox"]
+	path = serilog/serilog-sinks-richtextbox
+	url = https://github.com/serilog-contrib/serilog-sinks-richtextbox
