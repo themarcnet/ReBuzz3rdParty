@@ -11,7 +11,7 @@
     <!-- Policy is to trim TFM-specific builds to `netstandard2.0`, `net6.0`,
     all active LTS versions, and optionally the latest RTM version, when releasing new
     major Serilog versions. -->
-    <TargetFrameworks>net8.0</TargetFrameworks>
+    <TargetFrameworks>net9.0</TargetFrameworks>
 	
 	<LangVersion>12.0</LangVersion>
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
@@ -37,7 +37,7 @@
 
  
 
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'net8.0' ">
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net9.0' ">
     <DefineConstants>$(DefineConstants);FEATURE_DEFAULT_INTERFACE;FEATURE_SPAN;FEATURE_ITUPLE;FEATURE_DATE_AND_TIME_ONLY;FEATURE_ASYNCDISPOSABLE;FEATURE_WRITE_STRINGBUILDER;FEATURE_TOHEXSTRING;FEATURE_DICTIONARYTRYADD</DefineConstants>
 	
   </PropertyGroup>
