@@ -7,3 +7,6 @@
 [submodule "serilog/serilog-sinks-richtextbox"]
 	path = serilog/serilog-sinks-richtextbox
 	url = https://github.com/serilog-contrib/serilog-sinks-richtextbox
+[submodule "r8b/r8brain-free-src"]
+	path = r8b/r8brain-free-src
+	url = https://github.com/avaneev/r8brain-free-src
