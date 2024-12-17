@@ -26,8 +26,8 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <TreatSpecificWarningsAsErrors />
 	
-	<BaseOutputPath>$(SolutionDir)build\$(Configuration)\$(MSBuildProjectName)\bin</BaseOutputPath>
-	<IntermediateOutputPath>$(SolutionDir)build\$(Configuration)\$(MSBuildProjectName)\obj</IntermediateOutputPath>
+	<BaseOutputPath>$(SolutionDir)build\$(Configuration)\$(Platform)\$(MSBuildProjectName)\bin</BaseOutputPath>
+	<IntermediateOutputPath>$(SolutionDir)build\$(Configuration)\$(Platform)\$(MSBuildProjectName)\obj</IntermediateOutputPath>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -104,6 +104,7 @@
   <ItemGroup>
     <EditorConfigFiles Remove="serilog-sinks-richtextbox\.editorconfig" />
   </ItemGroup>
+
 
   <Target Name="ForcePerformRestore" AfterTargets="BeforeBuild">	
     <Exec Command="IF NOT EXIST  &quot;$(IntermediateOutputPath)..\project.assets.json&quot;  echo restore to $(IntermediateOutputPath)..\project.assets.json &amp;&amp;  dotnet restore &quot;$(ProjectName).csproj&quot; --no-dependencies &amp;&amp; move &quot;build\$(ProjectName)\obj\*&quot; &quot;$(IntermediateOutputPath)..\&quot; &amp;&amp; rmdir /Q /S build	 " /> 
