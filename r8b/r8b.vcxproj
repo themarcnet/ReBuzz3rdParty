@@ -71,24 +71,24 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(SolutionDir)\bin\$(Configuration)\net9.0-windows</OutDir>
-    <IntDir>$(SolutionDir)\build\$(Configuration)\$(Platform)\$(ProjectName)\obj</IntDir>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\net9.0-windows\</OutDir>
+    <IntDir>$(SolutionDir)\build\$(Configuration)\$(Platform)\$(ProjectName)\obj\</IntDir>
     <TargetName>r8bsrc$(PlatformArchitecture)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(SolutionDir)\bin\$(Configuration)\net9.0-windows</OutDir>
-    <IntDir>$(SolutionDir)\build\$(Configuration)\$(Platform)\$(ProjectName)\obj</IntDir>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\net9.0-windows\</OutDir>
+    <IntDir>$(SolutionDir)\build\$(Configuration)\$(Platform)\$(ProjectName)\obj\</IntDir>
     <TargetName>r8bsrc$(PlatformArchitecture)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)\bin\$(Configuration)\net9.0-windows</OutDir>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\net9.0-windows\</OutDir>
     <TargetName>r8bsrc$(PlatformArchitecture)</TargetName>
-    <IntDir>$(SolutionDir)\build\$(Configuration)\$(Platform)\$(ProjectName)\obj</IntDir>
+    <IntDir>$(SolutionDir)\build\$(Configuration)\$(Platform)\$(ProjectName)\obj\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)\bin\$(Configuration)\net9.0-windows</OutDir>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\net9.0-windows\</OutDir>
     <TargetName>r8bsrc$(PlatformArchitecture)</TargetName>
-    <IntDir>$(SolutionDir)\build\$(Configuration)\$(Platform)\$(ProjectName)\obj</IntDir>
+    <IntDir>$(SolutionDir)\build\$(Configuration)\$(Platform)\$(ProjectName)\obj\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
